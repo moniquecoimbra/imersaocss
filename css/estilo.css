@@ -1,0 +1,35 @@
+body {
+    background-image: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?cs=srgb&dl=abstrair-abstrato-arte-aspero-1939485.jpg&fm=jpg');
+    background-size: auto 100vh;
+    font-family: verdana; 
+    height: 100vh;
+    }
+  
+  .menu{
+    background-color: white;
+  }
+  .menu ul{
+    display:flex;
+    justify-content:space-around;
+  }
+  .menu li{
+    list-style: none;
+  }
+  
+  a {
+    color:gray;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-subtitle,
+  .site-title{
+    color: gray;
+    text-align: center;
+  }
+  
+  .site-subtitle{
+    font-style:italic;
+  }
