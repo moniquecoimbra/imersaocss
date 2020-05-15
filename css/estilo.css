@@ -1,13 +1,49 @@
+/*soft reset do css*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*recortar as imagens do tamanho q tem q usar no site - nao cortar no css*/
+.img-portfolio{
+  height: 180px;
+  width: 270px;
+  }
 body {
-    background-image: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?cs=srgb&dl=abstrair-abstrato-arte-aspero-1939485.jpg&fm=jpg');
+    background-image: url('../img/textura.jpg');
     background-size: auto 100vh;
     font-family: verdana; 
+    font-size: 12px;
     height: 100vh;
     }
-  
-  .menu{
-    background-color: white;
-  }
+
+/*o @media faz que: se a tela tiver pelo menos 400px vai carregar os estilos declarados para ela*/
+    @media (min-width: 400px){
+      body{
+        font-size: 14px;
+      }
+    }
+
+    @media (min-width: 600px){
+      body{
+        font-size: 18px;
+      }
+    }
+/*para o header tomar a pagina inicial inteira -como se fosse uma sessao*/
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*position fixed coloca o elemento sobre (eixoZ) os outros*/
+    .menu{   
+    background-color: white; 
+    opacity: 0.8;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    }
   .menu ul{
     display:flex;
     justify-content:space-around;
@@ -15,9 +51,12 @@ body {
   .menu li{
     list-style: none;
   }
-  
+  .menu a{
+    display: block;
+    padding: 20px 30px;
+  }
   a {
-    color:gray;
+    color:dimgray;
     text-decoration: none;
   }
   a:hover {
@@ -29,7 +68,11 @@ body {
     color: gray;
     text-align: center;
   }
+  .site-title{
+    font-size: 3em;
+    }
   
   .site-subtitle{
     font-style:italic;
+    font-size: 2em;
   }
